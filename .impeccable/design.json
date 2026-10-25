@@ -1,0 +1,374 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-25T14:20:57.092957+00:00",
+  "title": "Design System: Grip reference",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "tonalRamp": [
+          "oklch(15% 0.0054 95.10)",
+          "oklch(26% 0.0054 95.10)",
+          "oklch(38% 0.0054 95.10)",
+          "oklch(49% 0.0054 95.10)",
+          "oklch(61% 0.0054 95.10)",
+          "oklch(72% 0.0054 95.10)",
+          "oklch(84% 0.0054 95.10)",
+          "oklch(95% 0.0054 95.10)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Surface",
+        "tonalRamp": [
+          "oklch(15% 0.0054 95.10)",
+          "oklch(26% 0.0054 95.10)",
+          "oklch(38% 0.0054 95.10)",
+          "oklch(49% 0.0054 95.10)",
+          "oklch(61% 0.0054 95.10)",
+          "oklch(72% 0.0054 95.10)",
+          "oklch(84% 0.0054 95.10)",
+          "oklch(95% 0.0054 95.10)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "tonalRamp": [
+          "oklch(15% 0.0329 177.38)",
+          "oklch(26% 0.0329 177.38)",
+          "oklch(38% 0.0329 177.38)",
+          "oklch(49% 0.0329 177.38)",
+          "oklch(61% 0.0329 177.38)",
+          "oklch(72% 0.0329 177.38)",
+          "oklch(84% 0.0329 177.38)",
+          "oklch(95% 0.0329 177.38)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted",
+        "tonalRamp": [
+          "oklch(15% 0.0222 162.27)",
+          "oklch(26% 0.0222 162.27)",
+          "oklch(38% 0.0222 162.27)",
+          "oklch(49% 0.0222 162.27)",
+          "oklch(61% 0.0222 162.27)",
+          "oklch(72% 0.0222 162.27)",
+          "oklch(84% 0.0222 162.27)",
+          "oklch(95% 0.0222 162.27)"
+        ]
+      },
+      "teal": {
+        "role": "primary",
+        "displayName": "Teal",
+        "tonalRamp": [
+          "oklch(15% 0.0673 179.35)",
+          "oklch(26% 0.0673 179.35)",
+          "oklch(38% 0.0673 179.35)",
+          "oklch(49% 0.0673 179.35)",
+          "oklch(61% 0.0673 179.35)",
+          "oklch(72% 0.0673 179.35)",
+          "oklch(84% 0.0673 179.35)",
+          "oklch(95% 0.0673 179.35)"
+        ]
+      },
+      "teal-dark": {
+        "role": "primary",
+        "displayName": "Teal Dark",
+        "tonalRamp": [
+          "oklch(15% 0.0579 174.10)",
+          "oklch(26% 0.0579 174.10)",
+          "oklch(38% 0.0579 174.10)",
+          "oklch(49% 0.0579 174.10)",
+          "oklch(61% 0.0579 174.10)",
+          "oklch(72% 0.0579 174.10)",
+          "oklch(84% 0.0579 174.10)",
+          "oklch(95% 0.0579 174.10)"
+        ]
+      },
+      "wash": {
+        "role": "neutral",
+        "displayName": "Wash",
+        "tonalRamp": [
+          "oklch(15% 0.0092 150.69)",
+          "oklch(26% 0.0092 150.69)",
+          "oklch(38% 0.0092 150.69)",
+          "oklch(49% 0.0092 150.69)",
+          "oklch(61% 0.0092 150.69)",
+          "oklch(72% 0.0092 150.69)",
+          "oklch(84% 0.0092 150.69)",
+          "oklch(95% 0.0092 150.69)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Line",
+        "tonalRamp": [
+          "oklch(15% 0.0126 137.79)",
+          "oklch(26% 0.0126 137.79)",
+          "oklch(38% 0.0126 137.79)",
+          "oklch(49% 0.0126 137.79)",
+          "oklch(61% 0.0126 137.79)",
+          "oklch(72% 0.0126 137.79)",
+          "oklch(84% 0.0126 137.79)",
+          "oklch(95% 0.0126 137.79)"
+        ]
+      },
+      "soft-line": {
+        "role": "neutral",
+        "displayName": "Soft Line",
+        "tonalRamp": [
+          "oklch(15% 0.0094 113.17)",
+          "oklch(26% 0.0094 113.17)",
+          "oklch(38% 0.0094 113.17)",
+          "oklch(49% 0.0094 113.17)",
+          "oklch(61% 0.0094 113.17)",
+          "oklch(72% 0.0094 113.17)",
+          "oklch(84% 0.0094 113.17)",
+          "oklch(95% 0.0094 113.17)"
+        ]
+      },
+      "control-border": {
+        "role": "neutral",
+        "displayName": "Control Border",
+        "tonalRamp": [
+          "oklch(15% 0.0219 152.08)",
+          "oklch(26% 0.0219 152.08)",
+          "oklch(38% 0.0219 152.08)",
+          "oklch(49% 0.0219 152.08)",
+          "oklch(61% 0.0219 152.08)",
+          "oklch(72% 0.0219 152.08)",
+          "oklch(84% 0.0219 152.08)",
+          "oklch(95% 0.0219 152.08)"
+        ]
+      },
+      "panel": {
+        "role": "neutral",
+        "displayName": "Panel",
+        "tonalRamp": [
+          "oklch(15% 0.0113 141.26)",
+          "oklch(26% 0.0113 141.26)",
+          "oklch(38% 0.0113 141.26)",
+          "oklch(49% 0.0113 141.26)",
+          "oklch(61% 0.0113 141.26)",
+          "oklch(72% 0.0113 141.26)",
+          "oklch(84% 0.0113 141.26)",
+          "oklch(95% 0.0113 141.26)"
+        ]
+      },
+      "panel-border": {
+        "role": "neutral",
+        "displayName": "Panel Border",
+        "tonalRamp": [
+          "oklch(15% 0.0233 151.57)",
+          "oklch(26% 0.0233 151.57)",
+          "oklch(38% 0.0233 151.57)",
+          "oklch(49% 0.0233 151.57)",
+          "oklch(61% 0.0233 151.57)",
+          "oklch(72% 0.0233 151.57)",
+          "oklch(84% 0.0233 151.57)",
+          "oklch(95% 0.0233 151.57)"
+        ]
+      },
+      "focus": {
+        "role": "primary",
+        "displayName": "Focus",
+        "tonalRamp": [
+          "oklch(15% 0.0825 175.29)",
+          "oklch(26% 0.0825 175.29)",
+          "oklch(38% 0.0825 175.29)",
+          "oklch(49% 0.0825 175.29)",
+          "oklch(61% 0.0825 175.29)",
+          "oklch(72% 0.0825 175.29)",
+          "oklch(84% 0.0825 175.29)",
+          "oklch(95% 0.0825 175.29)"
+        ]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "White",
+        "tonalRamp": [
+          "oklch(15% 0.0000 89.88)",
+          "oklch(26% 0.0000 89.88)",
+          "oklch(38% 0.0000 89.88)",
+          "oklch(49% 0.0000 89.88)",
+          "oklch(61% 0.0000 89.88)",
+          "oklch(72% 0.0000 89.88)",
+          "oklch(84% 0.0000 89.88)",
+          "oklch(95% 0.0000 89.88)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Page heading."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Section and tool headings."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Default reading text."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Compact form labels."
+      },
+      "data": {
+        "displayName": "Data",
+        "purpose": "Tabular measurements."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "control-transition",
+        "value": "background-color .16s, color .16s, border-color .16s",
+        "purpose": "Control state feedback; disabled under reduced motion."
+      },
+      {
+        "name": "segment-transition",
+        "value": "background .15s, color .15s",
+        "purpose": "Segment state feedback; disabled under reduced motion."
+      },
+      {
+        "name": "data-refresh",
+        "value": "220ms cubic-bezier(0.16,1,0.3,1)",
+        "purpose": "Data refresh color wash from #e4efe9 to transparent; skipped under reduced motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "mobile",
+        "value": "600px"
+      },
+      {
+        "name": "stacked-workspace",
+        "value": "900px"
+      },
+      {
+        "name": "compact-desktop",
+        "value": "1150px"
+      },
+      {
+        "name": "wide",
+        "value": "1500px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary copy button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Main export action.",
+      "html": "<button class=\"ds-primary\"><svg width=\"17\" height=\"17\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" aria-hidden=\"true\"><rect x=\"8\" y=\"8\" width=\"12\" height=\"13\" rx=\"2\"/><path d=\"M15 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3\"/></svg><span>Copy table</span></button>",
+      "css": ".ds-primary{font-family:var(--font,'DM Sans',sans-serif);background:var(--teal,#17594e);color:white;border:0;border-radius:4px;width:100%;height:44px;display:flex;align-items:center;justify-content:center;gap:9px;font-size:13px;font-weight:500;cursor:pointer;transition:background-color .16s}.ds-primary:hover{background:var(--teal-dark,#104438)}.ds-primary:active{background:#0a352d}.ds-primary:focus-visible{outline:3px solid var(--focus,#2b7b69);outline-offset:4px}@media(prefers-reduced-motion:reduce){.ds-primary{transition:none}}"
+    },
+    {
+      "name": "Reset button",
+      "kind": "button",
+      "refersTo": "button-reset",
+      "description": "Quiet filter-reset action.",
+      "html": "<button class=\"ds-reset\">Reset filters</button>",
+      "css": ".ds-reset{font-family:var(--font,'DM Sans',sans-serif);background:transparent;color:var(--teal,#17594e);border:0;height:40px;padding:0;font-size:12px;text-decoration:underline;text-underline-offset:3px;cursor:pointer}.ds-reset:hover{color:var(--teal-dark,#104438)}.ds-reset:disabled{opacity:.5;cursor:default}.ds-reset:focus-visible{outline:3px solid var(--focus,#2b7b69);outline-offset:4px}"
+    },
+    {
+      "name": "Native select",
+      "kind": "input",
+      "refersTo": "select",
+      "description": "Labelled native filter field.",
+      "html": "<label class=\"ds-select-label\">Age group<select class=\"ds-select\"><option>All age groups</option><option>20\u201324</option></select></label>",
+      "css": ".ds-select-label{font-family:var(--font,'DM Sans',sans-serif);display:block;color:var(--ink,#253e38);font-size:12px;font-weight:600}.ds-select{font-family:var(--font,'DM Sans',sans-serif);display:block;margin-top:7px;width:100%;height:40px;padding:0 10px;color:var(--ink,#253e38);background:var(--surface,#fffefa);border:1px solid #a9b7ac;border-radius:4px;font-size:14px;cursor:pointer;transition:border-color .16s}.ds-select:hover{border-color:var(--teal,#17594e)}.ds-select:focus-visible{outline:3px solid var(--focus,#2b7b69);outline-offset:4px}@media(prefers-reduced-motion:reduce){.ds-select{transition:none}}"
+    },
+    {
+      "name": "Selected segment",
+      "kind": "custom",
+      "refersTo": "segment-selected",
+      "description": "Native radios with a filled selection.",
+      "html": "<fieldset class=\"ds-segments\"><legend>Sex</legend><label><input type=\"radio\" name=\"ds-sex\" checked><span>All</span></label><label><input type=\"radio\" name=\"ds-sex\"><span>Men</span></label><label><input type=\"radio\" name=\"ds-sex\"><span>Women</span></label></fieldset>",
+      "css": ".ds-segments{font-family:var(--font,'DM Sans',sans-serif);display:flex;gap:4px;margin:0;padding:3px;border:1px solid #a9b7ac;border-radius:4px;background:var(--surface,#fffefa);color:var(--ink,#253e38)}.ds-segments legend{font-size:12px;font-weight:600}.ds-segments label{position:relative;flex:1;cursor:pointer}.ds-segments input{position:absolute;opacity:0;width:1px;height:1px}.ds-segments span{display:flex;align-items:center;justify-content:center;height:32px;padding:0 12px;border-radius:2px;color:var(--muted,#58675f);font-size:13px}.ds-segments label:hover span{background:#dce8df}.ds-segments input:checked+span{background:var(--teal,#17594e);color:white}.ds-segments input:focus-visible+span{outline:3px solid var(--teal,#17594e);outline-offset:3px}"
+    },
+    {
+      "name": "Format tabs",
+      "kind": "custom",
+      "refersTo": "format-tab",
+      "description": "Radio-based export-format selection.",
+      "html": "<fieldset class=\"ds-tabs\"><legend>Copy format</legend><label><input type=\"radio\" name=\"ds-format\" checked><span>Table</span></label><label><input type=\"radio\" name=\"ds-format\"><span>Paragraph</span></label><label><input type=\"radio\" name=\"ds-format\"><span>Bullets</span></label></fieldset>",
+      "css": ".ds-tabs{font-family:var(--font,'DM Sans',sans-serif);display:flex;gap:6px;border:0;border-bottom:1px solid #b8c7bb;padding:0;margin:0}.ds-tabs legend{font-size:12px;margin-bottom:8px}.ds-tabs label{position:relative;flex:1;text-align:center;cursor:pointer}.ds-tabs input{position:absolute;opacity:0;width:1px;height:1px}.ds-tabs span{display:block;padding:0 0 11px;font-size:12px;color:var(--muted,#58675f);border-bottom:2px solid transparent}.ds-tabs input:checked+span{color:var(--teal,#17594e);border-bottom-color:var(--teal,#17594e);font-weight:600}.ds-tabs label:hover span{color:var(--teal,#17594e)}.ds-tabs input:focus-visible+span{outline:3px solid var(--teal,#17594e);outline-offset:3px}"
+    },
+    {
+      "name": "Reference table",
+      "kind": "custom",
+      "refersTo": "table",
+      "description": "Aligned measurements with a quiet emphasized mean.",
+      "html": "<div class=\"ds-table-scroll\" tabindex=\"0\" role=\"region\" aria-label=\"Reference example\"><table class=\"ds-table\"><thead><tr><th>Age</th><th>Hand</th><th>Mean</th><th>SD</th></tr></thead><tbody><tr><th scope=\"row\">20\u201324</th><td>Right</td><td class=\"ds-mean\">121.0</td><td>20.6</td></tr></tbody></table></div>",
+      "css": ".ds-table-scroll{overflow:auto;border:1px solid var(--line,#d6dcd4);border-radius:6px;background:var(--surface,#fffefa)}.ds-table-scroll:focus-visible{outline:3px solid var(--focus,#2b7b69);outline-offset:4px}.ds-table{font-family:var(--font,'DM Sans',sans-serif);width:100%;border-spacing:0;font-size:12px;line-height:1.45;font-variant-numeric:tabular-nums;color:var(--ink,#253e38)}.ds-table th,.ds-table td{padding:7px 10px;text-align:right}.ds-table th:first-child{text-align:left}.ds-table thead{background:var(--wash,#e9efea);color:var(--muted,#58675f)}.ds-table thead th{font-weight:500;border-bottom:1px solid var(--line,#d6dcd4)}.ds-table .ds-mean{font-weight:600;color:var(--teal,#17594e);background:#f3f6ef}.ds-table tbody tr:hover>*{background:#eaf0e8}"
+    },
+    {
+      "name": "Copy container",
+      "kind": "card",
+      "refersTo": "copy-panel",
+      "description": "Flat tonal grouping for export tools.",
+      "html": "<aside class=\"ds-panel\"><h2>Into your notes</h2><p>Copy the values you\u2019re viewing.</p></aside>",
+      "css": ".ds-panel{font-family:var(--font,'DM Sans',sans-serif);padding:22px 20px;border:1px solid var(--line,#d6dcd4);border-radius:6px;background:#eaf0e9;color:var(--ink,#253e38)}.ds-panel h2{font-size:16px;font-weight:600;letter-spacing:-.02em;margin:0}.ds-panel p{font-size:12px;line-height:1.5;color:var(--muted,#58675f);margin:8px 0 20px}"
+    },
+    {
+      "name": "Readonly preview",
+      "kind": "input",
+      "refersTo": "preview",
+      "description": "Preformatted, selectable export text.",
+      "html": "<label class=\"ds-preview-label\">Preview<textarea class=\"ds-preview\" readonly>Age (years)  Sex  Hand  Mean (lb)\n20\u201324  Men  Right  121.0</textarea></label>",
+      "css": ".ds-preview-label{font-family:var(--font,'DM Sans',sans-serif);font-size:11px;color:var(--muted,#58675f)}.ds-preview{font-family:var(--font,'DM Sans',sans-serif);display:block;margin-top:7px;width:100%;height:204px;min-height:120px;resize:vertical;border:1px solid #b8c7bb;border-radius:4px;background:#f8faf5;padding:12px;color:#42584b;font-size:11px;line-height:1.8;white-space:pre;overflow:auto}.ds-preview:focus-visible{outline:3px solid var(--focus,#2b7b69);outline-offset:4px}"
+    },
+    {
+      "name": "Study navigation",
+      "kind": "nav",
+      "description": "Compact text link to source context.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Study\"><a href=\"#study\">About the study <svg width=\"13\" height=\"13\" viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.3\" aria-hidden=\"true\"><path d=\"M4 12 12 4M4 4h8v8\"/></svg></a></nav>",
+      "css": ".ds-nav a{font-family:var(--font,'DM Sans',sans-serif);color:var(--teal,#17594e);font-size:13px;text-decoration:none;transition:color .16s}.ds-nav a:hover{color:var(--teal-dark,#104438)}.ds-nav a:focus-visible{outline:3px solid #2b7b69;outline-offset:4px}.ds-nav svg{vertical-align:-2px;margin-left:8px}@media(prefers-reduced-motion:reduce){.ds-nav a{transition:none}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Clinical Reference Sheet",
+    "overview": "Warm paper, deep ink and teal create a quiet working reference. One locally hosted type family and compact controls keep dense values legible. The visual character supports the approved clinical workflow without promotional ornament.\n\nBorders and pale tonal surfaces organize content. Motion is brief feedback: controls change color, refreshed data receives a short wash, and copy confirmation appears in place. Reduced-motion preferences suppress transitions and animation.",
+    "keyCharacteristics": [
+      "Warm paper with restrained teal emphasis.",
+      "Compact typography and tabular numeric alignment.",
+      "Flat surfaces, fine rules and gently rounded controls.",
+      "Native form controls with visible keyboard focus."
+    ],
+    "rules": [
+      {
+        "name": "The Teal Meaning Rule",
+        "body": "Use teal for actionable, selected or emphasized content; retain readable text and structural borders without relying on color alone.",
+        "section": "colors"
+      },
+      {
+        "name": "The Numeric Alignment Rule",
+        "body": "Right-align measurements and use tabular numerals; keep row labels left-aligned.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Reference Rule",
+        "body": "Separate working regions through tonal surfaces and fine borders rather than raised cards.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do retain the warm paper, deep ink and teal palette.",
+      "Do use semantic table headers, explicit form labels and visible keyboard focus.",
+      "Do preserve numeric alignment and contained table scrolling on narrow screens.",
+      "Do suppress transition and refresh motion when reduced motion is requested."
+    ],
+    "donts": [
+      "Don't replace the flat tonal surfaces with raised, shadowed cards.",
+      "Don't introduce a second display family or decorative type treatment.",
+      "Don't replace authored SVG icons with text glyphs."
+    ]
+  }
+}
