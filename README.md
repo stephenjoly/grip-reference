@@ -25,3 +25,7 @@ Geist is bundled locally under the SIL Open Font License; see `assets/Geist-OFL.
 ## Verification
 
 Browser checks in `.impeccable/verify-lilac.js` cover 81 exact ages, invalid inputs, exports, actual rich clipboard output, eleven color contrast cases, saved color reload, dialog keyboard/focus behavior, and page overflow at 320, 390, 768, 1024, and 1440px. Storage-denied recovery and reduced-motion behavior were also checked. Static app data is unchanged from the original verified transcription.
+
+## Deployment
+
+Live: https://ogs.stephenjoly.net. See [DEPLOYMENT.md](DEPLOYMENT.md) for the staging-to-production release process.

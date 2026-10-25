@@ -1,0 +1,39 @@
+name: Validate
+on:
+  pull_request:
+    branches: [staging, main]
+concurrency:
+  group: validate-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+permissions:
+  contents: read
+jobs:
+  static-site:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check JavaScript
+        run: |
+          node --check app.js
+          node --check settings.js
+          node --check data.js
+      - name: Build static image
+        run: docker build --build-arg SOURCE_REVISION=${{ github.event.pull_request.head.sha }} -t grip-reference:test .
+      - name: Verify static files and private path isolation
+        run: |
+          docker run -d --name grip-reference-test -p 8080:8080 grip-reference:test
+          trap 'docker stop grip-reference-test' EXIT
+          for attempt in $(seq 1 20); do
+            if curl -fsS http://localhost:8080/healthz; then break; fi
+            sleep 1
+          done
+          for path in / /index.html /styles.css /app.js /settings.js /data.js /favicon.svg /assets/geist.ttf /assets/Geist-OFL.txt; do
+            curl -fsS -o /dev/null "http://localhost:8080$path"
+          done
+          for path in /.env /.git/config /README.md /context.md /design-options/ /missing; do
+            test "$(curl -s -o /dev/null -w '%{http_code}' "http://localhost:8080$path")" = 404
+          done
