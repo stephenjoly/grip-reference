@@ -18,10 +18,10 @@ Replace hunting for a PDF with immediate table access and quick copying into cli
 The user supplied a scan of Table 2 from Mathiowetz et al. Full table visible first; users filter by age and sex and copy matching values.
 
 ## Capabilities and Constraints
-Age and sex filters, right/left hand data, mean, SD, SE, low and high in pounds. Copy as table, paragraph or bullets. Preserve study categories rather than inferring hand dominance. Mobile-friendly and subtle motion.
+Full table on first load. Exact-age entry and range/sex filters, right/left hand data, mean, SD, SE, low and high in pounds. Exact ages map to the published group (57 to 55–59; 75+ uses the final band), never interpolation. Under-20 and invalid inputs show no norms and disable copying. Copy as rich table, Markdown, TSV, paragraph or bullets. Preserve study categories rather than inferring hand dominance. Mobile selected-band tables use Measure / Right / Left columns. Mobile-friendly and subtle motion.
 
 ## Brand Commitments
-User approved warm paper, deep ink typography, teal accents, minimal scrolling, table-first layout and subtle transitions.
+User selected F / Lilac from the pen.dev CLI concepts in design-options/light-round/. Simple, clean, clear, modern and light; dark/warm concepts were rejected. Preserve table-first access, restrained motion, purple default, and Geist typography. Settings lets each user choose an accent preset or custom color. Color is saved locally when browser storage is available; age and filter selections are not persisted or transmitted.
 
 ## Evidence on Hand
 Supplied screenshot of Table 2; PubMed record PMID 3970660; online original article scan. Data must be checked against the scan. No affiliation or endorsement claims.

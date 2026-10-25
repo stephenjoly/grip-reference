@@ -1,0 +1,13 @@
+**
+!Dockerfile
+!deploy/
+!deploy/nginx.conf
+!index.html
+!styles.css
+!app.js
+!settings.js
+!data.js
+!favicon.svg
+!assets/
+!assets/geist.ttf
+!assets/Geist-OFL.txt
