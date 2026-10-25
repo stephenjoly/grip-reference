@@ -18,14 +18,10 @@ Replace hunting for a PDF with immediate table access and quick copying into cli
 The user supplied a scan of Table 2 from Mathiowetz et al. Full table visible first; users filter by age and sex and copy matching values.
 
 ## Capabilities and Constraints
-Age and sex filters, right/left hand data, mean, SD, SE, low and high in pounds. Copy as table, paragraph or bullets. Preserve study categories rather than inferring hand dominance. Mobile-friendly and subtle motion.
+Full table on first load. Exact-age entry and range/sex filters, right/left hand data, mean, SD, SE, low and high in pounds. Exact ages map to the published group (57 to 55–59; 75+ uses the final band), never interpolation. Under-20 and invalid inputs show no norms and disable copying. Copy as rich table, Markdown, TSV, paragraph or bullets. Preserve study categories rather than inferring hand dominance. Mobile selected-band tables use Measure / Right / Left columns. Mobile-friendly and subtle motion.
 
 ## Brand Commitments
-User rejected the initial warm-paper/teal implementation after reviewing it. Replacement visual direction is pending selection from three pen.dev CLI concepts in design-options/. Preserve minimal scrolling, table-first access and subtle transitions; the original palette is no longer binding.
-
-Latest preference: simple, clean, clear, modern and light. Dark and warm concepts were rejected. New D / Mono, E / Cloud and F / Lilac options live in design-options/light-round/; selection is pending.
-
-User now requires optional exact-age entry alongside range selection. Map whole ages to published study bands (e.g. 57 to 55–59), explicitly show the matched band, and do not interpolate single-year norms. This feature is designed but not yet implemented, pending visual selection.
+User selected F / Lilac from the pen.dev CLI concepts in design-options/light-round/. Simple, clean, clear, modern and light; dark/warm concepts were rejected. Preserve table-first access, restrained motion, purple default, and Geist typography. Settings lets each user choose an accent preset or custom color. Color is saved locally when browser storage is available; age and filter selections are not persisted or transmitted.
 
 ## Evidence on Hand
 Supplied screenshot of Table 2; PubMed record PMID 3970660; online original article scan. Data must be checked against the scan. No affiliation or endorsement claims.
