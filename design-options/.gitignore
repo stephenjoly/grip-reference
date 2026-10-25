@@ -1,0 +1,7 @@
+*.txt
+*.log
+grip-options.pen
+grip-options-v2.pen
+grip-options-final.pen
+design-options/
+*.zip

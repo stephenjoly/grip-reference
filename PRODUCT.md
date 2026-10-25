@@ -21,7 +21,9 @@ The user supplied a scan of Table 2 from Mathiowetz et al. Full table visible fi
 Age and sex filters, right/left hand data, mean, SD, SE, low and high in pounds. Copy as table, paragraph or bullets. Preserve study categories rather than inferring hand dominance. Mobile-friendly and subtle motion.
 
 ## Brand Commitments
-User approved warm paper, deep ink typography, teal accents, minimal scrolling, table-first layout and subtle transitions.
+User rejected the initial warm-paper/teal implementation after reviewing it. Replacement visual direction is pending selection from three pen.dev CLI concepts in design-options/. Preserve minimal scrolling, table-first access and subtle transitions; the original palette is no longer binding.
+
+User now requires optional exact-age entry alongside range selection. Map whole ages to published study bands (e.g. 57 to 55–59), explicitly show the matched band, and do not interpolate single-year norms. This feature is designed but not yet implemented, pending visual selection.
 
 ## Evidence on Hand
 Supplied screenshot of Table 2; PubMed record PMID 3970660; online original article scan. Data must be checked against the scan. No affiliation or endorsement claims.
