@@ -13,3 +13,7 @@ Verified 81 exact ages20–100, invalid/under-20 handling, actual rich HTML/text
 ## Hosting
 
 Public GitHub repository: `stephenjoly/grip-reference`. Production hostname: `ogs.stephenjoly.net`. Root Dockerfile serves only app assets with unprivileged Nginx on 8080; deployment procedure is in `DEPLOYMENT.md`.
+
+## Sharing preview
+
+Approved purple card is `assets/grip-sharing-v1.png` (1733 × 907). Open Graph and large-image card metadata point to the canonical public hostname; container and CI asset allowlists include the image.

@@ -31,7 +31,7 @@ jobs:
             if curl -fsS http://localhost:8080/healthz; then break; fi
             sleep 1
           done
-          for path in / /index.html /styles.css /app.js /settings.js /data.js /favicon.svg /assets/geist.ttf /assets/Geist-OFL.txt; do
+          for path in / /index.html /styles.css /app.js /settings.js /data.js /favicon.svg /assets/geist.ttf /assets/Geist-OFL.txt /assets/grip-sharing-v1.png; do
             curl -fsS -o /dev/null "http://localhost:8080$path"
           done
           for path in /.env /.git/config /README.md /context.md /design-options/ /missing; do
