@@ -23,6 +23,8 @@ Age and sex filters, right/left hand data, mean, SD, SE, low and high in pounds.
 ## Brand Commitments
 User rejected the initial warm-paper/teal implementation after reviewing it. Replacement visual direction is pending selection from three pen.dev CLI concepts in design-options/. Preserve minimal scrolling, table-first access and subtle transitions; the original palette is no longer binding.
 
+Latest preference: simple, clean, clear, modern and light. Dark and warm concepts were rejected. New D / Mono, E / Cloud and F / Lilac options live in design-options/light-round/; selection is pending.
+
 User now requires optional exact-age entry alongside range selection. Map whole ages to published study bands (e.g. 57 to 55–59), explicitly show the matched band, and do not interpolate single-year norms. This feature is designed but not yet implemented, pending visual selection.
 
 ## Evidence on Hand

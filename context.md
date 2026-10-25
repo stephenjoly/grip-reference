@@ -4,6 +4,8 @@ User approved and requested a plain static grip strength reference for OTs. Full
 
 Update: user rejected the first implementation's appearance, requested pen.dev design options before further implementation, and prefers the CLI. pen.dev desktop MCP was disconnected; authenticated `pen interactive` headless CLI worked. `design-options/grip-design-options.pen` contains A Cobalt clarity, B Editorial warmth, C Graphite focus, paired desktop/phone screens and a comparison board. Await selection before redesigning app. Current DESIGN.md records the old implementation, not approval for the replacement. Exact-age entry is now required; see design-options/README.md for mapping/validation behavior. It is shown in all phone concepts but not yet in app code.
 
+Second design round: user specifically rejected dark/warm looks and requested simple, clean, clear and modern. `design-options/light-round/clean-design-options.pen` has three new light concepts (D Mono, E Cloud, F Lilac), paired desktops/phones and a comparison board. Prefer these over the first round. Await user selection; runtime app still unchanged.
+
 Source: Mathiowetz et al. (1985), Table 2, page 71; PMID 3970660. Preserve original precision and anatomical right/left labels. `data.js` contains all 26 source rows. No backend, account, build tool, or patient records. Hosting target and final product name remain unconfirmed; current name is Grip reference.
 
 Run with `python3 -m http.server 4173`. No deployment performed. Browser verification covers desktop/mobile, filtering/reset, copy content and clipboard behavior.
