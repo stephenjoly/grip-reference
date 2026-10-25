@@ -1,194 +1,68 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-25T14:20:57.092957+00:00",
+  "generatedAt": "2026-10-25T18:23:47.139043+00:00",
   "title": "Design System: Grip reference",
   "extensions": {
     "colorMeta": {
-      "paper": {
-        "role": "neutral",
-        "displayName": "Paper",
-        "tonalRamp": [
-          "oklch(15% 0.0054 95.10)",
-          "oklch(26% 0.0054 95.10)",
-          "oklch(38% 0.0054 95.10)",
-          "oklch(49% 0.0054 95.10)",
-          "oklch(61% 0.0054 95.10)",
-          "oklch(72% 0.0054 95.10)",
-          "oklch(84% 0.0054 95.10)",
-          "oklch(95% 0.0054 95.10)"
-        ]
-      },
-      "surface": {
-        "role": "neutral",
-        "displayName": "Surface",
-        "tonalRamp": [
-          "oklch(15% 0.0054 95.10)",
-          "oklch(26% 0.0054 95.10)",
-          "oklch(38% 0.0054 95.10)",
-          "oklch(49% 0.0054 95.10)",
-          "oklch(61% 0.0054 95.10)",
-          "oklch(72% 0.0054 95.10)",
-          "oklch(84% 0.0054 95.10)",
-          "oklch(95% 0.0054 95.10)"
-        ]
-      },
-      "ink": {
-        "role": "neutral",
-        "displayName": "Ink",
-        "tonalRamp": [
-          "oklch(15% 0.0329 177.38)",
-          "oklch(26% 0.0329 177.38)",
-          "oklch(38% 0.0329 177.38)",
-          "oklch(49% 0.0329 177.38)",
-          "oklch(61% 0.0329 177.38)",
-          "oklch(72% 0.0329 177.38)",
-          "oklch(84% 0.0329 177.38)",
-          "oklch(95% 0.0329 177.38)"
-        ]
-      },
-      "muted": {
-        "role": "neutral",
-        "displayName": "Muted",
-        "tonalRamp": [
-          "oklch(15% 0.0222 162.27)",
-          "oklch(26% 0.0222 162.27)",
-          "oklch(38% 0.0222 162.27)",
-          "oklch(49% 0.0222 162.27)",
-          "oklch(61% 0.0222 162.27)",
-          "oklch(72% 0.0222 162.27)",
-          "oklch(84% 0.0222 162.27)",
-          "oklch(95% 0.0222 162.27)"
-        ]
-      },
-      "teal": {
+      "accent": {
         "role": "primary",
-        "displayName": "Teal",
+        "displayName": "Accent",
         "tonalRamp": [
-          "oklch(15% 0.0673 179.35)",
-          "oklch(26% 0.0673 179.35)",
-          "oklch(38% 0.0673 179.35)",
-          "oklch(49% 0.0673 179.35)",
-          "oklch(61% 0.0673 179.35)",
-          "oklch(72% 0.0673 179.35)",
-          "oklch(84% 0.0673 179.35)",
-          "oklch(95% 0.0673 179.35)"
+          "oklch(15% 0.1931 288.73)",
+          "oklch(26% 0.1931 288.73)",
+          "oklch(38% 0.1931 288.73)",
+          "oklch(49% 0.1931 288.73)",
+          "oklch(61% 0.1931 288.73)",
+          "oklch(72% 0.1931 288.73)",
+          "oklch(84% 0.1931 288.73)",
+          "oklch(95% 0.1931 288.73)"
         ]
       },
-      "teal-dark": {
+      "accent-ink": {
         "role": "primary",
-        "displayName": "Teal Dark",
+        "displayName": "Accent Ink",
         "tonalRamp": [
-          "oklch(15% 0.0579 174.10)",
-          "oklch(26% 0.0579 174.10)",
-          "oklch(38% 0.0579 174.10)",
-          "oklch(49% 0.0579 174.10)",
-          "oklch(61% 0.0579 174.10)",
-          "oklch(72% 0.0579 174.10)",
-          "oklch(84% 0.0579 174.10)",
-          "oklch(95% 0.0579 174.10)"
+          "oklch(15% 0.1931 288.73)",
+          "oklch(26% 0.1931 288.73)",
+          "oklch(38% 0.1931 288.73)",
+          "oklch(49% 0.1931 288.73)",
+          "oklch(61% 0.1931 288.73)",
+          "oklch(72% 0.1931 288.73)",
+          "oklch(84% 0.1931 288.73)",
+          "oklch(95% 0.1931 288.73)"
         ]
       },
-      "wash": {
-        "role": "neutral",
-        "displayName": "Wash",
-        "tonalRamp": [
-          "oklch(15% 0.0092 150.69)",
-          "oklch(26% 0.0092 150.69)",
-          "oklch(38% 0.0092 150.69)",
-          "oklch(49% 0.0092 150.69)",
-          "oklch(61% 0.0092 150.69)",
-          "oklch(72% 0.0092 150.69)",
-          "oklch(84% 0.0092 150.69)",
-          "oklch(95% 0.0092 150.69)"
-        ]
-      },
-      "line": {
-        "role": "neutral",
-        "displayName": "Line",
-        "tonalRamp": [
-          "oklch(15% 0.0126 137.79)",
-          "oklch(26% 0.0126 137.79)",
-          "oklch(38% 0.0126 137.79)",
-          "oklch(49% 0.0126 137.79)",
-          "oklch(61% 0.0126 137.79)",
-          "oklch(72% 0.0126 137.79)",
-          "oklch(84% 0.0126 137.79)",
-          "oklch(95% 0.0126 137.79)"
-        ]
-      },
-      "soft-line": {
-        "role": "neutral",
-        "displayName": "Soft Line",
-        "tonalRamp": [
-          "oklch(15% 0.0094 113.17)",
-          "oklch(26% 0.0094 113.17)",
-          "oklch(38% 0.0094 113.17)",
-          "oklch(49% 0.0094 113.17)",
-          "oklch(61% 0.0094 113.17)",
-          "oklch(72% 0.0094 113.17)",
-          "oklch(84% 0.0094 113.17)",
-          "oklch(95% 0.0094 113.17)"
-        ]
-      },
-      "control-border": {
-        "role": "neutral",
-        "displayName": "Control Border",
-        "tonalRamp": [
-          "oklch(15% 0.0219 152.08)",
-          "oklch(26% 0.0219 152.08)",
-          "oklch(38% 0.0219 152.08)",
-          "oklch(49% 0.0219 152.08)",
-          "oklch(61% 0.0219 152.08)",
-          "oklch(72% 0.0219 152.08)",
-          "oklch(84% 0.0219 152.08)",
-          "oklch(95% 0.0219 152.08)"
-        ]
-      },
-      "panel": {
-        "role": "neutral",
-        "displayName": "Panel",
-        "tonalRamp": [
-          "oklch(15% 0.0113 141.26)",
-          "oklch(26% 0.0113 141.26)",
-          "oklch(38% 0.0113 141.26)",
-          "oklch(49% 0.0113 141.26)",
-          "oklch(61% 0.0113 141.26)",
-          "oklch(72% 0.0113 141.26)",
-          "oklch(84% 0.0113 141.26)",
-          "oklch(95% 0.0113 141.26)"
-        ]
-      },
-      "panel-border": {
-        "role": "neutral",
-        "displayName": "Panel Border",
-        "tonalRamp": [
-          "oklch(15% 0.0233 151.57)",
-          "oklch(26% 0.0233 151.57)",
-          "oklch(38% 0.0233 151.57)",
-          "oklch(49% 0.0233 151.57)",
-          "oklch(61% 0.0233 151.57)",
-          "oklch(72% 0.0233 151.57)",
-          "oklch(84% 0.0233 151.57)",
-          "oklch(95% 0.0233 151.57)"
-        ]
-      },
-      "focus": {
+      "accent-hover": {
         "role": "primary",
-        "displayName": "Focus",
+        "displayName": "Accent Hover",
         "tonalRamp": [
-          "oklch(15% 0.0825 175.29)",
-          "oklch(26% 0.0825 175.29)",
-          "oklch(38% 0.0825 175.29)",
-          "oklch(49% 0.0825 175.29)",
-          "oklch(61% 0.0825 175.29)",
-          "oklch(72% 0.0825 175.29)",
-          "oklch(84% 0.0825 175.29)",
-          "oklch(95% 0.0825 175.29)"
+          "oklch(15% 0.1776 288.82)",
+          "oklch(26% 0.1776 288.82)",
+          "oklch(38% 0.1776 288.82)",
+          "oklch(49% 0.1776 288.82)",
+          "oklch(61% 0.1776 288.82)",
+          "oklch(72% 0.1776 288.82)",
+          "oklch(84% 0.1776 288.82)",
+          "oklch(95% 0.1776 288.82)"
         ]
       },
-      "white": {
-        "role": "neutral",
-        "displayName": "White",
+      "accent-hover-ink": {
+        "role": "primary",
+        "displayName": "Accent Hover Ink",
+        "tonalRamp": [
+          "oklch(15% 0.1691 288.72)",
+          "oklch(26% 0.1691 288.72)",
+          "oklch(38% 0.1691 288.72)",
+          "oklch(49% 0.1691 288.72)",
+          "oklch(61% 0.1691 288.72)",
+          "oklch(72% 0.1691 288.72)",
+          "oklch(84% 0.1691 288.72)",
+          "oklch(95% 0.1691 288.72)"
+        ]
+      },
+      "on-accent": {
+        "role": "primary",
+        "displayName": "On Accent",
         "tonalRamp": [
           "oklch(15% 0.0000 89.88)",
           "oklch(26% 0.0000 89.88)",
@@ -198,6 +72,146 @@
           "oklch(72% 0.0000 89.88)",
           "oklch(84% 0.0000 89.88)",
           "oklch(95% 0.0000 89.88)"
+        ]
+      },
+      "wash": {
+        "role": "neutral",
+        "displayName": "Wash",
+        "tonalRamp": [
+          "oklch(15% 0.0149 298.57)",
+          "oklch(26% 0.0149 298.57)",
+          "oklch(38% 0.0149 298.57)",
+          "oklch(49% 0.0149 298.57)",
+          "oklch(61% 0.0149 298.57)",
+          "oklch(72% 0.0149 298.57)",
+          "oklch(84% 0.0149 298.57)",
+          "oklch(95% 0.0149 298.57)"
+        ]
+      },
+      "mean": {
+        "role": "neutral",
+        "displayName": "Mean",
+        "tonalRamp": [
+          "oklch(15% 0.0054 297.73)",
+          "oklch(26% 0.0054 297.73)",
+          "oklch(38% 0.0054 297.73)",
+          "oklch(49% 0.0054 297.73)",
+          "oklch(61% 0.0054 297.73)",
+          "oklch(72% 0.0054 297.73)",
+          "oklch(84% 0.0054 297.73)",
+          "oklch(95% 0.0054 297.73)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "tonalRamp": [
+          "oklch(15% 0.0054 297.73)",
+          "oklch(26% 0.0054 297.73)",
+          "oklch(38% 0.0054 297.73)",
+          "oklch(49% 0.0054 297.73)",
+          "oklch(61% 0.0054 297.73)",
+          "oklch(72% 0.0054 297.73)",
+          "oklch(84% 0.0054 297.73)",
+          "oklch(95% 0.0054 297.73)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Surface",
+        "tonalRamp": [
+          "oklch(15% 0.0000 89.88)",
+          "oklch(26% 0.0000 89.88)",
+          "oklch(38% 0.0000 89.88)",
+          "oklch(49% 0.0000 89.88)",
+          "oklch(61% 0.0000 89.88)",
+          "oklch(72% 0.0000 89.88)",
+          "oklch(84% 0.0000 89.88)",
+          "oklch(95% 0.0000 89.88)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "tonalRamp": [
+          "oklch(15% 0.0352 288.55)",
+          "oklch(26% 0.0352 288.55)",
+          "oklch(38% 0.0352 288.55)",
+          "oklch(49% 0.0352 288.55)",
+          "oklch(61% 0.0352 288.55)",
+          "oklch(72% 0.0352 288.55)",
+          "oklch(84% 0.0352 288.55)",
+          "oklch(95% 0.0352 288.55)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted",
+        "tonalRamp": [
+          "oklch(15% 0.0388 292.40)",
+          "oklch(26% 0.0388 292.40)",
+          "oklch(38% 0.0388 292.40)",
+          "oklch(49% 0.0388 292.40)",
+          "oklch(61% 0.0388 292.40)",
+          "oklch(72% 0.0388 292.40)",
+          "oklch(84% 0.0388 292.40)",
+          "oklch(95% 0.0388 292.40)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Line",
+        "tonalRamp": [
+          "oklch(15% 0.0180 300.05)",
+          "oklch(26% 0.0180 300.05)",
+          "oklch(38% 0.0180 300.05)",
+          "oklch(49% 0.0180 300.05)",
+          "oklch(61% 0.0180 300.05)",
+          "oklch(72% 0.0180 300.05)",
+          "oklch(84% 0.0180 300.05)",
+          "oklch(95% 0.0180 300.05)"
+        ]
+      },
+      "soft-line": {
+        "role": "neutral",
+        "displayName": "Soft Line",
+        "tonalRamp": [
+          "oklch(15% 0.0109 297.62)",
+          "oklch(26% 0.0109 297.62)",
+          "oklch(38% 0.0109 297.62)",
+          "oklch(49% 0.0109 297.62)",
+          "oklch(61% 0.0109 297.62)",
+          "oklch(72% 0.0109 297.62)",
+          "oklch(84% 0.0109 297.62)",
+          "oklch(95% 0.0109 297.62)"
+        ]
+      },
+      "control-border": {
+        "role": "neutral",
+        "displayName": "Control Border",
+        "tonalRamp": [
+          "oklch(15% 0.0297 298.79)",
+          "oklch(26% 0.0297 298.79)",
+          "oklch(38% 0.0297 298.79)",
+          "oklch(49% 0.0297 298.79)",
+          "oklch(61% 0.0297 298.79)",
+          "oklch(72% 0.0297 298.79)",
+          "oklch(84% 0.0297 298.79)",
+          "oklch(95% 0.0297 298.79)"
+        ]
+      },
+      "preview": {
+        "role": "neutral",
+        "displayName": "Preview",
+        "tonalRamp": [
+          "oklch(15% 0.0040 286.33)",
+          "oklch(26% 0.0040 286.33)",
+          "oklch(38% 0.0040 286.33)",
+          "oklch(49% 0.0040 286.33)",
+          "oklch(61% 0.0040 286.33)",
+          "oklch(72% 0.0040 286.33)",
+          "oklch(84% 0.0040 286.33)",
+          "oklch(95% 0.0040 286.33)"
         ]
       }
     },
@@ -220,28 +234,43 @@
       },
       "data": {
         "displayName": "Data",
-        "purpose": "Tabular measurements."
+        "purpose": "Aligned tabular measurements."
       }
     },
-    "shadows": [],
+    "shadows": [
+      {
+        "name": "settings-modal",
+        "value": "0 4px 8px #24223515",
+        "purpose": "Settings dialog only."
+      },
+      {
+        "name": "preset-selected",
+        "value": "inset 0 0 0 1px var(--accent-ink)",
+        "purpose": "Structural emphasis for selected accent swatch."
+      }
+    ],
     "motion": [
       {
         "name": "control-transition",
         "value": "background-color .16s, color .16s, border-color .16s",
-        "purpose": "Control state feedback; disabled under reduced motion."
+        "purpose": "Control feedback; disabled under reduced motion."
       },
       {
         "name": "segment-transition",
         "value": "background .15s, color .15s",
-        "purpose": "Segment state feedback; disabled under reduced motion."
+        "purpose": "Segment feedback; disabled under reduced motion."
       },
       {
         "name": "data-refresh",
         "value": "220ms cubic-bezier(0.16,1,0.3,1)",
-        "purpose": "Data refresh color wash from #e4efe9 to transparent; skipped under reduced motion."
+        "purpose": "Current wash to transparent; skipped for reduced motion."
       }
     ],
     "breakpoints": [
+      {
+        "name": "small-mobile",
+        "value": "370px"
+      },
       {
         "name": "mobile",
         "value": "600px"
@@ -252,10 +281,18 @@
       },
       {
         "name": "compact-desktop",
+        "value": "1100px"
+      },
+      {
+        "name": "legacy-table-density",
         "value": "1150px"
       },
       {
-        "name": "wide",
+        "name": "wide-rail",
+        "value": "1440px"
+      },
+      {
+        "name": "wide-type-and-table",
         "value": "1500px"
       }
     ]
@@ -264,88 +301,95 @@
     {
       "name": "Primary copy button",
       "kind": "button",
-      "refersTo": "button-primary",
       "description": "Main export action.",
-      "html": "<button class=\"ds-primary\"><svg width=\"17\" height=\"17\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" aria-hidden=\"true\"><rect x=\"8\" y=\"8\" width=\"12\" height=\"13\" rx=\"2\"/><path d=\"M15 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3\"/></svg><span>Copy table</span></button>",
-      "css": ".ds-primary{font-family:var(--font,'DM Sans',sans-serif);background:var(--teal,#17594e);color:white;border:0;border-radius:4px;width:100%;height:44px;display:flex;align-items:center;justify-content:center;gap:9px;font-size:13px;font-weight:500;cursor:pointer;transition:background-color .16s}.ds-primary:hover{background:var(--teal-dark,#104438)}.ds-primary:active{background:#0a352d}.ds-primary:focus-visible{outline:3px solid var(--focus,#2b7b69);outline-offset:4px}@media(prefers-reduced-motion:reduce){.ds-primary{transition:none}}"
+      "html": "<button class=\"ds-primary\">Copy table</button>",
+      "css": ".ds-primary{font-family:var(--font,Geist,sans-serif);width:100%;height:42px;border:0;border-radius:5px;background:var(--accent,#7052d6);color:var(--on-accent,#fff);font-size:13px;font-weight:500;cursor:pointer;transition:background-color .16s}.ds-primary:hover,.ds-primary:active{background:var(--accent-hover,#654ac1)}.ds-primary:focus-visible{outline:3px solid var(--accent-ink,#7052d6);outline-offset:4px}@media(prefers-reduced-motion:reduce){.ds-primary{transition:none}}",
+      "refersTo": "button-primary"
     },
     {
-      "name": "Reset button",
+      "name": "Reset action",
       "kind": "button",
-      "refersTo": "button-reset",
-      "description": "Quiet filter-reset action.",
+      "description": "Quiet underlined reset.",
       "html": "<button class=\"ds-reset\">Reset filters</button>",
-      "css": ".ds-reset{font-family:var(--font,'DM Sans',sans-serif);background:transparent;color:var(--teal,#17594e);border:0;height:40px;padding:0;font-size:12px;text-decoration:underline;text-underline-offset:3px;cursor:pointer}.ds-reset:hover{color:var(--teal-dark,#104438)}.ds-reset:disabled{opacity:.5;cursor:default}.ds-reset:focus-visible{outline:3px solid var(--focus,#2b7b69);outline-offset:4px}"
+      "css": ".ds-reset{font-family:var(--font,Geist,sans-serif);height:40px;padding:0;border:0;background:transparent;color:var(--accent-ink,#7052d6);font-size:12px;text-decoration:underline;text-underline-offset:3px;cursor:pointer}.ds-reset:hover{color:var(--accent-hover-ink,#5f46b6)}.ds-reset:disabled{opacity:.5;cursor:default}.ds-reset:focus-visible{outline:3px solid var(--accent-ink,#7052d6);outline-offset:4px}",
+      "refersTo": "button-reset"
     },
     {
-      "name": "Native select",
+      "name": "Age group field",
       "kind": "input",
-      "refersTo": "select",
-      "description": "Labelled native filter field.",
-      "html": "<label class=\"ds-select-label\">Age group<select class=\"ds-select\"><option>All age groups</option><option>20\u201324</option></select></label>",
-      "css": ".ds-select-label{font-family:var(--font,'DM Sans',sans-serif);display:block;color:var(--ink,#253e38);font-size:12px;font-weight:600}.ds-select{font-family:var(--font,'DM Sans',sans-serif);display:block;margin-top:7px;width:100%;height:40px;padding:0 10px;color:var(--ink,#253e38);background:var(--surface,#fffefa);border:1px solid #a9b7ac;border-radius:4px;font-size:14px;cursor:pointer;transition:border-color .16s}.ds-select:hover{border-color:var(--teal,#17594e)}.ds-select:focus-visible{outline:3px solid var(--focus,#2b7b69);outline-offset:4px}@media(prefers-reduced-motion:reduce){.ds-select{transition:none}}"
+      "description": "Labelled native selection.",
+      "html": "<label class=\"ds-field\">Age group<select><option>All age groups</option><option>55\u201359</option><option>75+</option></select></label>",
+      "css": ".ds-field{font-family:var(--font,Geist,sans-serif);display:block;font-size:12px;font-weight:500;color:var(--ink,#242235)}.ds-field select{font-family:var(--font,Geist,sans-serif);display:block;margin-top:7px;width:100%;height:42px;padding:0 12px;border:1px solid #c8c2d7;border-radius:5px;background:var(--surface,#fff);color:var(--ink,#242235);font-size:14px;cursor:pointer}.ds-field select:hover{border-color:var(--accent-ink,#7052d6)}.ds-field select:focus-visible{outline:3px solid var(--accent-ink,#7052d6);outline-offset:4px}",
+      "refersTo": "select"
     },
     {
-      "name": "Selected segment",
+      "name": "Sex selection",
       "kind": "custom",
-      "refersTo": "segment-selected",
-      "description": "Native radios with a filled selection.",
-      "html": "<fieldset class=\"ds-segments\"><legend>Sex</legend><label><input type=\"radio\" name=\"ds-sex\" checked><span>All</span></label><label><input type=\"radio\" name=\"ds-sex\"><span>Men</span></label><label><input type=\"radio\" name=\"ds-sex\"><span>Women</span></label></fieldset>",
-      "css": ".ds-segments{font-family:var(--font,'DM Sans',sans-serif);display:flex;gap:4px;margin:0;padding:3px;border:1px solid #a9b7ac;border-radius:4px;background:var(--surface,#fffefa);color:var(--ink,#253e38)}.ds-segments legend{font-size:12px;font-weight:600}.ds-segments label{position:relative;flex:1;cursor:pointer}.ds-segments input{position:absolute;opacity:0;width:1px;height:1px}.ds-segments span{display:flex;align-items:center;justify-content:center;height:32px;padding:0 12px;border-radius:2px;color:var(--muted,#58675f);font-size:13px}.ds-segments label:hover span{background:#dce8df}.ds-segments input:checked+span{background:var(--teal,#17594e);color:white}.ds-segments input:focus-visible+span{outline:3px solid var(--teal,#17594e);outline-offset:3px}"
+      "description": "Native radios in separate rounded tiles.",
+      "html": "<fieldset class=\"ds-segments\"><legend>Sex</legend><label><input name=\"ds-sex\" type=\"radio\" checked><span>All</span></label><label><input name=\"ds-sex\" type=\"radio\"><span>Men</span></label><label><input name=\"ds-sex\" type=\"radio\"><span>Women</span></label></fieldset>",
+      "css": ".ds-segments{font-family:var(--font,Geist,sans-serif);display:flex;gap:4px;border:0;padding:0;margin:0;color:var(--ink,#242235)}.ds-segments legend{font-size:12px;font-weight:500;margin-bottom:7px}.ds-segments label{position:relative;cursor:pointer}.ds-segments input{position:absolute;opacity:0;width:1px;height:1px}.ds-segments span{display:flex;align-items:center;justify-content:center;height:40px;padding:0 15px;border-radius:5px;background:var(--wash,#f4f1fc);font-size:13px}.ds-segments label:hover span{background:var(--mean,#fbfafe)}.ds-segments input:checked+span{background:var(--accent,#7052d6);color:var(--on-accent,#fff)}.ds-segments input:focus-visible+span{outline:3px solid var(--accent-ink,#7052d6);outline-offset:3px}",
+      "refersTo": "segment-selected"
     },
     {
       "name": "Format tabs",
       "kind": "custom",
-      "refersTo": "format-tab",
-      "description": "Radio-based export-format selection.",
+      "description": "Underlined radio-based export formats.",
       "html": "<fieldset class=\"ds-tabs\"><legend>Copy format</legend><label><input type=\"radio\" name=\"ds-format\" checked><span>Table</span></label><label><input type=\"radio\" name=\"ds-format\"><span>Paragraph</span></label><label><input type=\"radio\" name=\"ds-format\"><span>Bullets</span></label></fieldset>",
-      "css": ".ds-tabs{font-family:var(--font,'DM Sans',sans-serif);display:flex;gap:6px;border:0;border-bottom:1px solid #b8c7bb;padding:0;margin:0}.ds-tabs legend{font-size:12px;margin-bottom:8px}.ds-tabs label{position:relative;flex:1;text-align:center;cursor:pointer}.ds-tabs input{position:absolute;opacity:0;width:1px;height:1px}.ds-tabs span{display:block;padding:0 0 11px;font-size:12px;color:var(--muted,#58675f);border-bottom:2px solid transparent}.ds-tabs input:checked+span{color:var(--teal,#17594e);border-bottom-color:var(--teal,#17594e);font-weight:600}.ds-tabs label:hover span{color:var(--teal,#17594e)}.ds-tabs input:focus-visible+span{outline:3px solid var(--teal,#17594e);outline-offset:3px}"
+      "css": ".ds-tabs{font-family:var(--font,Geist,sans-serif);display:flex;gap:6px;border:0;border-bottom:1px solid var(--line,#e6e2ef);padding:0;margin:0}.ds-tabs legend{font-size:12px;margin-bottom:8px}.ds-tabs label{position:relative;flex:1;text-align:center;cursor:pointer}.ds-tabs input{position:absolute;opacity:0;width:1px;height:1px}.ds-tabs span{display:block;padding:0 0 11px;font-size:12px;color:var(--muted,#706c85);border-bottom:2px solid transparent}.ds-tabs input:checked+span{color:var(--accent-ink,#7052d6);border-bottom-color:var(--accent-ink,#7052d6);font-weight:600}.ds-tabs label:hover span{color:var(--accent-ink,#7052d6)}.ds-tabs input:focus-visible+span{outline:3px solid var(--accent-ink,#7052d6);outline-offset:3px}",
+      "refersTo": "format-tab"
     },
     {
       "name": "Reference table",
       "kind": "custom",
-      "refersTo": "table",
-      "description": "Aligned measurements with a quiet emphasized mean.",
-      "html": "<div class=\"ds-table-scroll\" tabindex=\"0\" role=\"region\" aria-label=\"Reference example\"><table class=\"ds-table\"><thead><tr><th>Age</th><th>Hand</th><th>Mean</th><th>SD</th></tr></thead><tbody><tr><th scope=\"row\">20\u201324</th><td>Right</td><td class=\"ds-mean\">121.0</td><td>20.6</td></tr></tbody></table></div>",
-      "css": ".ds-table-scroll{overflow:auto;border:1px solid var(--line,#d6dcd4);border-radius:6px;background:var(--surface,#fffefa)}.ds-table-scroll:focus-visible{outline:3px solid var(--focus,#2b7b69);outline-offset:4px}.ds-table{font-family:var(--font,'DM Sans',sans-serif);width:100%;border-spacing:0;font-size:12px;line-height:1.45;font-variant-numeric:tabular-nums;color:var(--ink,#253e38)}.ds-table th,.ds-table td{padding:7px 10px;text-align:right}.ds-table th:first-child{text-align:left}.ds-table thead{background:var(--wash,#e9efea);color:var(--muted,#58675f)}.ds-table thead th{font-weight:500;border-bottom:1px solid var(--line,#d6dcd4)}.ds-table .ds-mean{font-weight:600;color:var(--teal,#17594e);background:#f3f6ef}.ds-table tbody tr:hover>*{background:#eaf0e8}"
+      "description": "Dense reference data with mean emphasis.",
+      "html": "<div class=\"ds-table-wrap\" tabindex=\"0\" role=\"region\" aria-label=\"Reference example\"><table class=\"ds-table\"><thead><tr><th>Age</th><th>Hand</th><th>Mean (lb)</th><th>SD</th></tr></thead><tbody><tr><th scope=\"row\">20\u201324</th><td>Right</td><td class=\"ds-mean\">121.0</td><td>20.6</td></tr></tbody></table></div>",
+      "css": ".ds-table-wrap{overflow:auto;border:1px solid var(--line,#e6e2ef);border-radius:6px;background:var(--surface,#fff)}.ds-table-wrap:focus-visible{outline:3px solid var(--accent-ink,#7052d6);outline-offset:4px}.ds-table{font-family:var(--font,Geist,sans-serif);width:100%;border-spacing:0;font-size:12px;line-height:1.45;font-variant-numeric:tabular-nums;color:var(--ink,#242235)}.ds-table th,.ds-table td{padding:7px 10px;text-align:right}.ds-table th:first-child{text-align:left}.ds-table thead{background:var(--wash,#f4f1fc);color:var(--muted,#706c85)}.ds-table thead th{font-weight:500;border-bottom:1px solid var(--line,#e6e2ef)}.ds-table .ds-mean{font-weight:500;color:var(--accent-ink,#7052d6);background:var(--mean,#fbfafe)}.ds-table tbody tr:hover>*{background:var(--wash,#f4f1fc)}",
+      "refersTo": "table"
     },
     {
-      "name": "Copy container",
+      "name": "Copy rail",
       "kind": "card",
-      "refersTo": "copy-panel",
-      "description": "Flat tonal grouping for export tools.",
+      "description": "Flat export-tool container.",
       "html": "<aside class=\"ds-panel\"><h2>Into your notes</h2><p>Copy the values you\u2019re viewing.</p></aside>",
-      "css": ".ds-panel{font-family:var(--font,'DM Sans',sans-serif);padding:22px 20px;border:1px solid var(--line,#d6dcd4);border-radius:6px;background:#eaf0e9;color:var(--ink,#253e38)}.ds-panel h2{font-size:16px;font-weight:600;letter-spacing:-.02em;margin:0}.ds-panel p{font-size:12px;line-height:1.5;color:var(--muted,#58675f);margin:8px 0 20px}"
+      "css": ".ds-panel{font-family:var(--font,Geist,sans-serif);padding:20px;border:1px solid var(--line,#e6e2ef);border-radius:8px;background:var(--surface,#fff);color:var(--ink,#242235)}.ds-panel h2{font-size:16px;font-weight:600;letter-spacing:-.02em;margin:0}.ds-panel p{font-size:12px;line-height:1.5;color:var(--muted,#706c85);margin:14px 0 20px}",
+      "refersTo": "copy-panel"
     },
     {
-      "name": "Readonly preview",
+      "name": "Copy preview disclosure",
       "kind": "input",
-      "refersTo": "preview",
-      "description": "Preformatted, selectable export text.",
-      "html": "<label class=\"ds-preview-label\">Preview<textarea class=\"ds-preview\" readonly>Age (years)  Sex  Hand  Mean (lb)\n20\u201324  Men  Right  121.0</textarea></label>",
-      "css": ".ds-preview-label{font-family:var(--font,'DM Sans',sans-serif);font-size:11px;color:var(--muted,#58675f)}.ds-preview{font-family:var(--font,'DM Sans',sans-serif);display:block;margin-top:7px;width:100%;height:204px;min-height:120px;resize:vertical;border:1px solid #b8c7bb;border-radius:4px;background:#f8faf5;padding:12px;color:#42584b;font-size:11px;line-height:1.8;white-space:pre;overflow:auto}.ds-preview:focus-visible{outline:3px solid var(--focus,#2b7b69);outline-offset:4px}"
+      "description": "Mobile preview is disclosed; desktop preview remains open.",
+      "html": "<details class=\"ds-details\"><summary>Preview &amp; table options</summary><label>Preview<textarea readonly>Age (years)  Sex  Hand  Mean (lb)\n20\u201324  Men  Right  121.0</textarea></label></details>",
+      "css": ".ds-details{font-family:var(--font,Geist,sans-serif);font-size:11px;color:var(--muted,#706c85)}.ds-details summary{font-size:12px;cursor:pointer;padding:8px 0}.ds-details summary:hover{color:var(--accent-ink,#7052d6)}.ds-details summary:focus-visible{outline:3px solid var(--accent-ink,#7052d6);outline-offset:4px}.ds-details label{display:block;margin-top:10px}.ds-details textarea{font-family:var(--font,Geist,sans-serif);display:block;margin-top:7px;width:100%;height:150px;min-height:120px;resize:vertical;border:1px solid var(--line,#e6e2ef);border-radius:4px;background:#fafafd;padding:12px;color:var(--muted,#706c85);font-size:11px;line-height:1.8;white-space:pre;overflow:auto}.ds-details textarea:focus-visible{outline:3px solid var(--accent-ink,#7052d6);outline-offset:4px}",
+      "refersTo": "preview"
     },
     {
-      "name": "Study navigation",
+      "name": "Header navigation",
       "kind": "nav",
-      "description": "Compact text link to source context.",
-      "html": "<nav class=\"ds-nav\" aria-label=\"Study\"><a href=\"#study\">About the study <svg width=\"13\" height=\"13\" viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.3\" aria-hidden=\"true\"><path d=\"M4 12 12 4M4 4h8v8\"/></svg></a></nav>",
-      "css": ".ds-nav a{font-family:var(--font,'DM Sans',sans-serif);color:var(--teal,#17594e);font-size:13px;text-decoration:none;transition:color .16s}.ds-nav a:hover{color:var(--teal-dark,#104438)}.ds-nav a:focus-visible{outline:3px solid #2b7b69;outline-offset:4px}.ds-nav svg{vertical-align:-2px;margin-left:8px}@media(prefers-reduced-motion:reduce){.ds-nav a{transition:none}}"
+      "description": "Quiet study link and Settings action.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Page\"><a href=\"#study\">About the study</a><button>Settings</button></nav>",
+      "css": ".ds-nav{display:flex;align-items:center;gap:26px}.ds-nav a,.ds-nav button{font-family:var(--font,Geist,sans-serif);font-size:12px;color:var(--muted,#706c85);background:transparent;border:0;padding:9px 0;text-decoration:none;cursor:pointer}.ds-nav a:hover,.ds-nav button:hover{color:var(--accent-ink,#7052d6)}.ds-nav a:focus-visible{outline:3px solid var(--accent-ink,#7052d6);outline-offset:4px}.ds-nav button:focus-visible{outline:3px solid var(--accent-ink,#7052d6);outline-offset:4px}"
+    },
+    {
+      "name": "Accent preset",
+      "kind": "custom",
+      "description": "Selected color swatch with a structural selection border.",
+      "html": "<label class=\"ds-accent\"><input type=\"radio\" name=\"ds-accent\" checked><span><i aria-hidden=\"true\"></i>Purple</span></label>",
+      "css": ".ds-accent{font-family:var(--font,Geist,sans-serif);position:relative;display:block;cursor:pointer;color:var(--ink,#242235)}.ds-accent input{position:absolute;opacity:0;width:1px;height:1px}.ds-accent span{display:flex;align-items:center;gap:10px;min-height:42px;border:1px solid var(--line,#e6e2ef);border-radius:5px;padding:9px 12px;font-size:13px}.ds-accent i{display:block;width:16px;height:16px;border-radius:4px;background:#7052d6}.ds-accent:hover span{background:var(--wash,#f4f1fc)}.ds-accent input:checked+span{border-color:var(--accent-ink,#7052d6);background:var(--mean,#fbfafe);box-shadow:inset 0 0 0 1px var(--accent-ink,#7052d6)}.ds-accent input:focus-visible+span{outline:3px solid var(--accent-ink,#7052d6);outline-offset:3px}"
     }
   ],
   "narrative": {
-    "northStar": "The Clinical Reference Sheet",
-    "overview": "Warm paper, deep ink and teal create a quiet working reference. One locally hosted type family and compact controls keep dense values legible. The visual character supports the approved clinical workflow without promotional ornament.\n\nBorders and pale tonal surfaces organize content. Motion is brief feedback: controls change color, refreshed data receives a short wash, and copy confirmation appears in place. Reduced-motion preferences suppress transitions and animation.",
+    "northStar": "The Lilac Reference Sheet",
+    "overview": "Cool white surfaces, dark violet ink and a configurable lilac accent make a quiet working reference. The user selected F / Lilac from `design-options/light-round/exports/r7oIC.png` and `aKB0r.png`. Geist, compact controls and aligned measurements carry the visual identity.\n\nFine borders and pale tinted surfaces organize the work. Brief color feedback accompanies controls and data changes; reduced-motion preferences suppress it. Purple is the default identity, while Settings allows the accent to follow the user's preference.",
     "keyCharacteristics": [
-      "Warm paper with restrained teal emphasis.",
-      "Compact typography and tabular numeric alignment.",
-      "Flat surfaces, fine rules and gently rounded controls.",
-      "Native form controls with visible keyboard focus."
+      "Cool white surfaces with a configurable lilac accent.",
+      "Locally hosted Geist and tabular numeric alignment.",
+      "Flat working regions, fine borders and gently rounded controls.",
+      "Compact mobile measurement tables and a disclosed copy preview."
     ],
     "rules": [
       {
-        "name": "The Teal Meaning Rule",
-        "body": "Use teal for actionable, selected or emphasized content; retain readable text and structural borders without relying on color alone.",
+        "name": "The Accent Meaning Rule",
+        "body": "Use the current accent for actions, selection and emphasized measurements; derive readable text and foreground shades rather than hardcoding purple across components.",
         "section": "colors"
       },
       {
@@ -355,20 +399,22 @@
       },
       {
         "name": "The Flat Reference Rule",
-        "body": "Separate working regions through tonal surfaces and fine borders rather than raised cards.",
+        "body": "Separate working regions through tonal surfaces and fine borders; reserve the small shadow and dim backdrop for the Settings modal.",
         "section": "elevation"
       }
     ],
     "dos": [
-      "Do retain the warm paper, deep ink and teal palette.",
-      "Do use semantic table headers, explicit form labels and visible keyboard focus.",
-      "Do preserve numeric alignment and contained table scrolling on narrow screens.",
-      "Do suppress transition and refresh motion when reduced motion is requested."
+      "Do retain cool white surfaces and derive accent roles from Settings.",
+      "Do use semantic table headers, explicit field labels and visible keyboard focus.",
+      "Do preserve numeric alignment and compact selected-band tables on mobile.",
+      "Do suppress transitions and the data wash when reduced motion is requested.",
+      "Do persist only the accent preference, with a usable visit-only fallback."
     ],
     "donts": [
-      "Don't replace the flat tonal surfaces with raised, shadowed cards.",
-      "Don't introduce a second display family or decorative type treatment.",
-      "Don't replace authored SVG icons with text glyphs."
+      "Don't restore the superseded warm-paper teal identity as the default.",
+      "Don't turn flat working regions into raised cards.",
+      "Don't introduce a second display family or replace authored SVGs with text glyphs.",
+      "Don't hardcode accent foregrounds that bypass contrast adjustment."
     ]
   }
 }
