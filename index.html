@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#174d46">
+  <meta name="description" content="Adult grip strength norms from Mathiowetz et al. (1985). Filter by age and sex, then copy reference values into your notes.">
+  <title>Grip reference — Adult strength norms</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="data.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#reference">Skip to reference table</a>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="Grip reference home"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><path d="M4 18V8m6 14V4m6 16V6m6 10v-6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>grip<span>reference</span></a>
+    <a class="source-link" href="#study">About the study <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M4 12 12 4M4 4h8v8"/></svg></a>
+  </header>
+  <main>
+    <section class="intro" aria-labelledby="page-title">
+      <div><h1 id="page-title">Grip strength, <span>at a glance.</span></h1><p>Adult norms. Ready for your next assessment.</p></div>
+      <p class="study-label">Mathiowetz et al., 1985<br><span>Table 2 · Strength in pounds (lb)</span></p>
+    </section>
+    <section id="reference" aria-label="Grip strength reference">
+      <form class="filters" id="filters">
+        <div class="age-field"><label for="age">Age group <span>(years)</span></label><select id="age" name="age"><option value="all">All age groups</option></select></div>
+        <fieldset><legend>Sex <span>as reported in the study</span></legend><div class="segments"><label><input type="radio" name="sex" value="all" checked><span>All</span></label><label><input type="radio" name="sex" value="Men"><span>Men</span></label><label><input type="radio" name="sex" value="Women"><span>Women</span></label></div></fieldset>
+        <button type="reset" class="text-button" id="reset-filters" disabled>Reset filters</button>
+      </form>
+      <div class="workspace">
+        <div class="data-area">
+          <div class="table-toolbar"><h2 id="selection-title">All age groups</h2><span id="result-count" role="status" aria-live="polite"></span></div>
+          <p class="scroll-hint">Scroll across to see every measure.</p>
+          <div class="table-scroll" tabindex="0" role="region" aria-label="Grip strength data; scroll horizontally on smaller screens">
+            <table id="norms-table"><caption class="sr-only">Average grip strength performance by age, sex and hand. All values in pounds.</caption><thead></thead><tbody></tbody></table>
+          </div>
+          <div class="table-key"><p><strong>SD</strong> Standard deviation <span>·</span> <strong>SE</strong> Standard error</p><p>Low / high = observed sample range</p></div>
+        </div>
+        <aside class="copy-panel" aria-labelledby="copy-heading">
+          <div class="copy-heading"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M15 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"/></svg><h2 id="copy-heading">Into your notes</h2></div>
+          <p>Copy the values you’re viewing.</p>
+          <fieldset class="format-field"><legend class="sr-only">Copy format</legend><div class="format-options"><label><input type="radio" name="format" value="table" checked><span>Table</span></label><label><input type="radio" name="format" value="paragraph"><span>Paragraph</span></label><label><input type="radio" name="format" value="bullets"><span>Bullets</span></label></div></fieldset>
+          <div id="table-style-field"><label for="table-style">Table format</label><select id="table-style"><option value="rich">Word / Excel</option><option value="markdown">Markdown</option><option value="tsv">Plain text (tabs)</option></select></div>
+          <div class="preview-heading"><label for="copy-preview">Preview</label><span id="copy-count"></span></div>
+          <textarea id="copy-preview" readonly spellcheck="false" aria-describedby="copy-help"></textarea>
+          <p id="copy-help">Includes units and study citation.</p>
+          <button type="button" id="copy-button" class="primary-button"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M15 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"/></svg><span>Copy table</span></button>
+          <p id="copy-status" class="copy-status" role="status" aria-live="polite"></p>
+        </aside>
+      </div>
+    </section>
+    <section class="study" id="study" aria-labelledby="study-heading">
+      <div><h2 id="study-heading">The study behind the numbers.</h2><p>Mathiowetz V, Kashman N, Volland G, Weber K, Dowe M, Rogers S. (1985). Grip and pinch strength: Normative data for adults. <cite>Archives of Physical Medicine and Rehabilitation, 66</cite>(2), 69–74. Table 2, p. 71.</p><a href="https://pubmed.ncbi.nlm.nih.gov/3970660/" target="_blank" rel="noopener">View study record <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M4 12 12 4M4 4h8v8"/></svg></a><a href="https://www.researchgate.net/profile/Virgil-Mathiowetz/publication/19190602_Grip_and_Pinch_Strength_Normative_data_for_adults/links/0046352027368897d2000000/Grip-and-Pinch-Strength-Normative-data-for-adults.pdf" target="_blank" rel="noopener">Original article PDF <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M4 12 12 4M4 4h8v8"/></svg></a></div>
+      <div class="reading-note"><h3>Reading this reference</h3><p>Values describe the study sample, in pounds. Right and left refer to the hand tested, not hand dominance. “All subjects” is the pooled sample, not a separate age group.</p><p>Low and high are observed values, not clinical cutoffs.</p></div>
+    </section>
+  </main>
+  <footer><span>Grip reference</span><span>Less searching. More time for care.</span></footer>
+  <noscript><p class="noscript">Enable JavaScript to use the filters and copy tools, or <a href="https://www.carolinatherapy.net/wp-content/uploads/Grip-and-Pinch-Strength-Normative-Data-for-Adults.pdf">open the source PDF</a>.</p></noscript>
+</body>
+</html>
