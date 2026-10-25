@@ -29,3 +29,7 @@ Browser checks in `.impeccable/verify-lilac.js` cover 81 exact ages, invalid inp
 ## Deployment
 
 Live: https://ogs.stephenjoly.net. See [DEPLOYMENT.md](DEPLOYMENT.md) for the staging-to-production release process.
+
+## Sharing
+
+Open Graph and large-image social cards use the approved purple preview at `assets/grip-sharing-v1.png` (1733 × 907). The canonical URL is https://ogs.stephenjoly.net/. Update the image filename and metadata together when replacing the card so sharing caches can discover the new asset.

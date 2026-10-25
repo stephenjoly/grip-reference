@@ -28,3 +28,7 @@ docker run --rm -p 8080:8080 grip-reference
 ## Rollback
 
 For a regression, revert through the same staging → main release path and let Dokploy rebuild. For urgent recovery, select the preceding retained image in Dokploy and verify its commit and health. For the first release, withdrawing only this application's route/service returns to the previous state. Do not change shared proxy, registry, or other applications.
+
+## Sharing preview
+
+`index.html` includes server-rendered Open Graph and large-image card tags. `assets/grip-sharing-v1.png` must stay in the Docker copy list, build-context allowlist, Nginx path allowlist, and CI asset checks. Verify its public HTTPS response is `image/png`, dimensions match the tags, and a crawler can read the tags without executing JavaScript. Social platforms may cache prior previews; use their refresh tool or share again after their cache expires.
