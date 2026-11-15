@@ -17,3 +17,7 @@ Public GitHub repository: `stephenjoly/grip-reference`. Production hostname: `og
 ## Sharing preview
 
 Approved purple card is `assets/grip-sharing-v1.png` (1733 × 907). Open Graph and large-image card metadata point to the canonical public hostname; container and CI asset allowlists include the image.
+
+## Birthday lookup
+
+Choose Birthday and enter a date of birth to calculate completed age using today's local device date, then show the original study's matching age band. Age and birthday stay in memory; the birthday is never saved, sent, or included in copied output. Exports include calculated age and the reference band. Future/invalid dates and ages under 20 show no norms and disable copying. February 29 birthdays advance on March 1 in non-leap years. Switching age modes or resetting clears the birthday.

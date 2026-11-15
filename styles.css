@@ -34,3 +34,16 @@ dialog{width:min(440px,calc(100% - 32px));max-height:calc(100% - 40px);overflow:
 @media print{.age-feedback,.mobile-results,dialog{display:none!important}.data-area.has-mobile-results .table-scroll{display:block!important}}
 @media(min-width:601px) and (max-width:900px){.copy-details{grid-column:2;grid-row:1/7}.copy-details .preview-heading{margin-top:0}}
 @media(max-width:600px){.data-area.has-mobile-results .table-toolbar{display:none}.copy-panel{background:transparent;border:0;padding:0;margin-top:20px}.copy-panel>p:first-of-type{display:none}.copy-heading{margin-bottom:20px}.format-options{margin-bottom:14px}.copy-details>summary{display:list-item;color:var(--muted);font-size:12px;cursor:pointer;padding:8px 0}.copy-details[open] summary{margin-bottom:10px}.copy-details>summary:focus-visible{outline:3px solid var(--accent-ink);outline-offset:4px}.copy-panel #copy-help{margin:10px 0 14px}.table-key{padding-bottom:0}}
+
+/* One age entry method at a time, including birthday lookup. */
+.filters{flex-wrap:wrap}
+.age-modes{display:flex;flex-basis:100%;gap:26px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+.age-modes span{display:block;font-size:13px;color:var(--muted);padding-bottom:2px}
+.age-modes input:checked+span{color:var(--accent-ink);font-weight:600}
+.filters:not([data-age-mode=exact]) .exact-age-field,.filters:not([data-age-mode=group]) .age-field,.filters:not([data-age-mode=birthday]) .birthday-field{display:none}
+.birthday-field{width:200px;min-width:0}
+.birthday-field>label{display:block;margin-bottom:7px}
+input[type=date]{height:42px;border:1px solid #c8c2d7;border-radius:5px;background:var(--surface);padding:0 12px;min-width:0;max-width:100%;width:100%;font:inherit;color:inherit;caret-color:var(--accent-ink)}
+input[type=date]:hover{border-color:var(--accent-ink)}
+input[type=date][aria-invalid=true]{border-color:#b42342}
+@media(max-width:600px){.filters[data-age-mode=birthday]{grid-template-columns:minmax(0,1fr)}.birthday-field{width:100%}.age-modes{gap:24px}.filters[data-age-mode=birthday]>.text-button{margin-top:-8px}}
