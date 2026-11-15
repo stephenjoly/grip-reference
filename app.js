@@ -2,6 +2,8 @@
 const $ = (selector) => document.querySelector(selector);
 const ageSelect = $('#age');
 const exactAge = $('#exact-age');
+const birthday = $('#birthday');
+let birthdayAge = null;
 let ageError = '';
 const mobileQuery = matchMedia('(max-width: 600px)');
 const setPreviewLayout = () => { $('#copy-details').open = !mobileQuery.matches; };
@@ -24,8 +26,7 @@ function setAgeMode(mode) {
   $('#filters').dataset.ageMode = mode;
   $(`input[name="age-mode"][value="${mode}"]`).checked = true;
 }
-function readExactAge() {
-  const value = exactAge.value.trim();
+function selectAge(value) {
   ageError = '';
   ageSelect.value = 'all';
   if (value) {
@@ -34,8 +35,35 @@ function readExactAge() {
     else if (age < 20) ageError = 'This study provides norms for adults aged 20 and older.';
     else ageSelect.value = age >= 75 ? '75+' : `${Math.floor(age / 5) * 5}–${Math.floor(age / 5) * 5 + 4}`;
   }
-  setAgeMode('exact');
-  render();
+}
+// Compare calendar dates, rather than parsing a birthday as a UTC instant.
+// A February 29 birthday advances on March 1 in a non-leap year.
+function ageFromBirthday(value, today = new Date()) {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(value)) return null;
+  const [year, month, day] = value.split('-').map(Number);
+  const date = new Date(0);
+  date.setUTCFullYear(year, month - 1, day);
+  if (year < 1 || date.getUTCFullYear() !== year || date.getUTCMonth() !== month - 1 || date.getUTCDate() !== day) return null;
+  const current = [today.getFullYear(), today.getMonth() + 1, today.getDate()];
+  const beforeBirthday = current[1] < month || (current[1] === month && current[2] < day);
+  const age = current[0] - year - Number(beforeBirthday);
+  return age < 0 ? null : age;
+}
+function readExactAge() {
+  birthday.value = ''; birthdayAge = null;
+  selectAge(exactAge.value.trim());
+  setAgeMode('exact'); render();
+}
+function readBirthday() {
+  exactAge.value = ''; birthdayAge = null;
+  selectAge('');
+  if (birthday.validity.badInput) ageError = 'Enter a complete, valid date of birth.';
+  else if (birthday.value) {
+    birthdayAge = ageFromBirthday(birthday.value);
+    if (birthdayAge === null) ageError = 'Enter a valid date of birth on or before today.';
+    else selectAge(String(birthdayAge));
+  }
+  setAgeMode('birthday'); render();
 }
 function exportRows() {
   const {rows, sexes} = selection();
@@ -53,6 +81,7 @@ function updateCopy() {
   const headings = ['Age (years)', 'Sex', 'Hand', ...metrics.map(metric => `${metric} (lb)`)];
   const tsv = [headings, ...rows].map(row => row.join('\t')).join('\n');
   const source = `Source: ${citation}`;
+  const ageNote = birthdayAge !== null && !ageError ? `Age today: ${birthdayAge} years. Reference age group: ${ageSelect.value} years.` : '';
   if (format === 'table') {
     const markdown = [headings, headings.map(() => '---'), ...rows].map(row => `| ${row.join(' | ')} |`).join('\n');
     currentText = `${$('#table-style').value === 'markdown' ? markdown : tsv}\n\n${source}`;
@@ -60,7 +89,8 @@ function updateCopy() {
     const statements = rows.map(([age, sex, hand, mean, sd, se, low, high]) => `${sex}, ${age === 'All subjects' ? 'all subjects (pooled)' : `aged ${age} years`}, ${hand.toLowerCase()} hand: mean ${mean} lb, SD ${sd} lb, SE ${se} lb, observed range ${low}–${high} lb.`);
     currentText = (format === 'bullets' ? statements.map(text => `• ${text}`).join('\n') : statements.join('\n\n')) + `\n\n${source}`;
   }
-  currentHtml = `<table style="border-collapse:collapse"><caption>Adult grip strength norms (pounds)</caption><thead><tr>${headings.map(value => `<th style="border:1px solid #999;padding:6px;text-align:left">${escapeHtml(value)}</th>`).join('')}</tr></thead><tbody>${rows.map(row => `<tr>${row.map(value => `<td style="border:1px solid #999;padding:6px">${escapeHtml(value)}</td>`).join('')}</tr>`).join('')}</tbody></table><p>${escapeHtml(source)}</p>`;
+  if (ageNote) currentText += `\n\n${ageNote}`;
+  currentHtml = `<table style="border-collapse:collapse"><caption>Adult grip strength norms (pounds)</caption><thead><tr>${headings.map(value => `<th style="border:1px solid #999;padding:6px;text-align:left">${escapeHtml(value)}</th>`).join('')}</tr></thead><tbody>${rows.map(row => `<tr>${row.map(value => `<td style="border:1px solid #999;padding:6px">${escapeHtml(value)}</td>`).join('')}</tr>`).join('')}</tbody></table>${ageNote ? `<p>${escapeHtml(ageNote)}</p>` : ''}<p>${escapeHtml(source)}</p>`;
   $('#table-style-field').hidden = format !== 'table';
   $('#copy-preview').value = currentText;
   $('#copy-preview').classList.toggle('prose', format !== 'table');
@@ -81,12 +111,15 @@ function render() {
   const band = ageSelect.value === 'all' ? 'All age groups' : ageSelect.value === 'All subjects' ? 'All subjects · pooled sample' : `Ages ${ageSelect.value}`;
   $('#selection-title').textContent = ageError ? 'No matching norms' : band;
   $('#result-count').textContent = `${sexes.join(' & ')} · ${rows.length} rows`;
-  $('#reset-filters').disabled = ageSelect.value === 'all' && sexes.length === 2 && !exactAge.value;
+  $('#reset-filters').disabled = ageSelect.value === 'all' && sexes.length === 2 && !exactAge.value && !birthday.value && !birthday.validity.badInput;
   const feedback = $('#age-feedback');
-  feedback.hidden = !ageError && !exactAge.value.trim();
+  const birthdayMode = $('#filters').dataset.ageMode === 'birthday';
+  feedback.hidden = !ageError && !exactAge.value.trim() && !birthdayMode;
   feedback.classList.toggle('error', Boolean(ageError));
-  feedback.textContent = ageError || (exactAge.value.trim() ? `${Number(exactAge.value)} years matches the ${ageSelect.value} age group.` : '');
-  exactAge.setAttribute('aria-invalid', String(Boolean(ageError)));
+  const calculatedAge = birthdayMode && birthdayAge !== null ? `Age ${birthdayAge} today · ` : '';
+  feedback.textContent = calculatedAge + (ageError || (birthdayMode ? birthdayAge !== null ? `Uses the published ${ageSelect.value} age group. Birthday is not saved.` : 'Enter a birthday to calculate age today and find the matching norms. Birthday is not saved.' : exactAge.value.trim() ? `${Number(exactAge.value)} years matches the ${ageSelect.value} age group.` : ''));
+  exactAge.setAttribute('aria-invalid', String(Boolean(ageError) && !birthdayMode));
+  birthday.setAttribute('aria-invalid', String(Boolean(ageError) && birthdayMode));
   $('#empty-state').hidden = rows.length > 0;
   $('#empty-message').textContent = ageError;
   $('.table-scroll').hidden = !rows.length;
@@ -103,17 +136,19 @@ function render() {
 }
 $('#filters').addEventListener('submit', event => event.preventDefault());
 exactAge.addEventListener('input', readExactAge);
+birthday.addEventListener('input', readBirthday);
+birthday.addEventListener('change', readBirthday);
 $('#filters').addEventListener('change', event => {
   if (event.target === ageSelect) {
-    exactAge.value = ''; ageError = ''; setAgeMode('group');
+    exactAge.value = ''; birthday.value = ''; birthdayAge = null; ageError = ''; setAgeMode('group');
   } else if (event.target.name === 'age-mode') {
-    exactAge.value = ''; ageError = '';
-    if (event.target.value === 'exact') ageSelect.value = 'all';
+    exactAge.value = ''; birthday.value = ''; birthdayAge = null; ageError = '';
+    ageSelect.value = 'all';
     setAgeMode(event.target.value);
   }
   render();
 });
-$('#filters').addEventListener('reset', () => { queueMicrotask(() => { ageError = ''; setAgeMode('exact'); render(); }); });
+$('#filters').addEventListener('reset', () => { queueMicrotask(() => { ageError = ''; birthdayAge = null; setAgeMode('exact'); render(); }); });
 $('#clear-invalid').addEventListener('click', () => $('#filters').reset());
 document.querySelectorAll('input[name="format"]').forEach(input => input.addEventListener('change', updateCopy));
 $('#table-style').addEventListener('change', updateCopy);

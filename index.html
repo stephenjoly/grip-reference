@@ -41,9 +41,9 @@
     </section>
     <section id="reference" aria-label="Grip strength reference">
       <form class="filters" id="filters" data-age-mode="exact" novalidate>
-        <fieldset class="age-modes"><legend class="sr-only">Age entry method</legend><label><input type="radio" name="age-mode" value="exact" checked><span>Exact age</span></label><label><input type="radio" name="age-mode" value="group"><span>Age group</span></label></fieldset>
+        <fieldset class="age-modes"><legend class="sr-only">Age entry method</legend><label><input type="radio" name="age-mode" value="exact" checked><span>Exact age</span></label><label><input type="radio" name="age-mode" value="birthday"><span>Birthday</span></label><label><input type="radio" name="age-mode" value="group"><span>Age group</span></label></fieldset>
         <div class="exact-age-field"><label for="exact-age">Exact age <span>(years)</span></label><input id="exact-age" name="exact-age" type="text" inputmode="numeric" autocomplete="off" placeholder="Enter age" aria-describedby="age-feedback"></div>
-        <span class="or-label" aria-hidden="true">or</span>
+        <div class="birthday-field"><label for="birthday">Date of birth</label><input id="birthday" name="birthday" type="date" autocomplete="off" aria-describedby="age-feedback"></div>
         <div class="age-field"><label for="age">Age group</label><select id="age" name="age"><option value="all">All age groups</option></select></div>
         <fieldset><legend>Sex <span>as reported in the study</span></legend><div class="segments"><label><input type="radio" name="sex" value="all" checked><span>All</span></label><label><input type="radio" name="sex" value="Men"><span>Men</span></label><label><input type="radio" name="sex" value="Women"><span>Women</span></label></div></fieldset>
         <button type="reset" class="text-button" id="reset-filters" disabled>Reset filters</button>
