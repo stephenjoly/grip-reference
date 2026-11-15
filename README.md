@@ -33,3 +33,7 @@ Live: https://ogs.stephenjoly.net. See [DEPLOYMENT.md](DEPLOYMENT.md) for the st
 ## Sharing
 
 Open Graph and large-image social cards use the approved purple preview at `assets/grip-sharing-v1.png` (1733 × 907). The canonical URL is https://ogs.stephenjoly.net/. Update the image filename and metadata together when replacing the card so sharing caches can discover the new asset.
+
+## Birthday lookup
+
+Choose Birthday and enter a date of birth to calculate completed age using today's local device date, then show the original study's matching age band. Age and birthday stay in memory; the birthday is never saved, sent, or included in copied output. Exports include calculated age and the reference band. Future/invalid dates and ages under 20 show no norms and disable copying. February 29 birthdays advance on March 1 in non-leap years. Switching age modes or resetting clears the birthday.
